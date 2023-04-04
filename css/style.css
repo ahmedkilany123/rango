@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #89a6c4;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+/* start header  */
+header {
+
+z-index: 10000;
+
+position: relative;
+}
+header .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    z-index: 100;
+    position: inherit;
+}
+
+header .top-header .left a,
+header .top-header .right a {
+    color: aliceblue;
+    margin:0 20px;
+    font-size: 16px;
+}
+header .top-header .left a:hover,
+header .top-header .right a:hover {
+    color: #89a6c4;
+}
+header .top-header .left a i,
+header .top-header .right a i {
+    margin-right: 5px;
+}
+
+header .right .log {
+    position: relative;
+}
+header .right .log:hover .login {
+    display: block;
+}
+.login {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    display: none;
+    top: 18px;
+    border: 1px solid #eee;
+    border-top: 3px solid #89a6c4;
+}
+.login p {
+    font-size: 20px;
+    padding: 5px 0;
+}
+.login input {
+    padding: 10px 20px;
+    display: block;
+}
+.login input[type=button] {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #89a6c4;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.login input[type=button]:hover {
+    background-color: #57697c;
+}
+ .login a {
+    color: black!important;
+ }
+
+
+.bot-header {
+    padding: 20px 0;    
+}
+.bot-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bot-header .container .logo img {
+    width: 100%;
+}
+.bot-header .container .links {
+    display: flex;
+}
+.bot-header .container .links li{
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+.bot-header .container .links .active {
+    background-color: #89a6c4;
+}
+.bot-header .container .links .home {
+    display: none;
+    flex-direction: row;
+    background-color: white;
+    position: absolute;
+    width: 720px;
+    top: 42px;
+    border-top: 2px solid #89a6c4;
+    box-shadow: 0 4px 10px rgba(0 0 0 /57%);
+    padding: 10px 0px;
+    z-index: 100000;
+}
+.bot-header .container .links .home li {
+    padding: 10px 30px;
+    margin: 0 10px;
+    border-bottom: 1px solid #6e6a6a5e;
+    color: #777;
+    font-size: 14px;
+}
+.bot-header .container .links .home li:hover {
+   background-color: white;
+   color: #89a6c4;
+}
+.bot-header .container .links .active a {
+    color: white;
+}
+.bot-header .container .links .active:hover .home {
+    display: flex;
+}
+.bot-header .container .links li:hover {
+    background-color: #89a6c4;
+}
+.bot-header .container .links li:hover a {
+    color: white;
+}
+.bot-header .container .links li a{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+}
+.bot-header .container .icons i{
+    padding: 10px 15px;
+    color: #4e4d4d;
+    cursor: pointer;
+}
+.bot-header .container .icons i:first-child {
+    border-right: 1px solid #777;
+}
+.bot-header .container .icons i:hover {
+    color: #89a6c4;
+}
+
+
+
+
+
+
+
+
+
+/* end header  */
+
+
+.landing {
+    height: calc( 100vh - 132px);
+    background-color: #eee;
+    overflow: hidden;
+}
+.landing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.landing .info h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+}
+.landing p {
+    color: #504f4f;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -4px;
+    word-spacing: 5px;
+}
+.landing span {
+    display: block;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+.landing button {
+    display: block;
+    margin: 0 0 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #89a6c4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.landing button:hover {
+    color:black;
+    background-color: white;
+}
