@@ -196,6 +196,9 @@ header .right .log:hover .login {
     align-items: center;
     gap: 40px;
 }
+.landing .info {
+    padding: 0 50px;
+}
 .landing .info h2 {
     font-size: 50px;
     text-transform: uppercase;
